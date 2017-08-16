@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.rayanalkhelaiwi.musicalstructure.PlayingSong">
+
+    <ImageView
+        android:id="@+id/stopButton"
+        style="@style/playingStyleControlButtons"
+        android:src="@drawable/stop"/>
+
+    <ImageView
+        android:id="@+id/pauseButton"
+        style="@style/playingStyleControlButtons"
+        android:layout_toLeftOf="@id/stopButton"
+        android:src="@drawable/pause"/>
+
+    <ImageView
+        android:id="@+id/playingButton"
+        style="@style/playingStyleControlButtons"
+        android:layout_toRightOf="@id/stopButton"
+        android:src="@drawable/play"/>
+
+    <ImageView
+        android:id="@+id/backwardButton"
+        style="@style/playingStyleControlButtons"
+        android:layout_toLeftOf="@id/pauseButton"
+        android:src="@drawable/backward"/>
+
+    <ImageView
+        android:id="@+id/forwardButton"
+        style="@style/playingStyleControlButtons"
+        android:layout_toRightOf="@id/playingButton"
+        android:src="@drawable/forward"/>
+
+    <ImageView
+        android:id="@+id/albumImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/musicplayericon"/>
+
+    <TextView
+        android:id="@+id/startTime"
+        android:text="0:00"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"
+        style="@style/timingSeekBarStyle"/>
+
+    <TextView
+        android:id="@+id/endTime"
+        android:text="3:47"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        style="@style/timingSeekBarStyle"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startTime"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/songsList"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/songslist"/>
+
+    <ImageView
+        android:id="@+id/artistList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/artistlist"/>
+
+</RelativeLayout>
