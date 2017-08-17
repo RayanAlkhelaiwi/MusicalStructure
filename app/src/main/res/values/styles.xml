@@ -10,17 +10,44 @@
 
     <!--Style set for the playing control buttons-->
     <style name="playingStyleControlButtons">
-        <item name="android:layout_width">70dp</item>
-        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_below">@id/seekBar</item>
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginTop">430dp</item>
     </style>
 
     <!--Style set for the timing of the seek-bar-->
     <style name="timingSeekBarStyle">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_below">@+id/albumImage</item>
+    <item name="android:layout_below">@+id/defaultplayingpic</item>
         <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--Style set for the 3 bar buttons on the top-->
+    <style name="barTransitionButtons">
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+    </style>
+
+    <!--Style set for the songs' details (Artist & Song) and payment description-->
+    <style name="songsArtistsPaymentDetails">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!--Style set for the songs default picture in the songs list-->
+    <style name="songsPics">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:src">@drawable/musicalnotetwo</item>
     </style>
 </resources>

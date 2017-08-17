@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">MusicalStructure</string>
+
+    <!--String set for the artists' names-->
+    <string name="artist1">Bruno Mars</string>
+    <string name="artist2">Adele</string>
+    <string name="artist3">Michael Bublé</string>
+    <string name="artist4">Luis Fonsi</string>
+    <string name="artist5">Ed Sheeran</string>
+    <string name="artist6">Sam Smith</string>
+
+    <!--String set for the songs' names-->
+    <string name="song1">Just The Way You Are</string>
+    <string name="song2">Hello</string>
+    <string name="song3">Feeling Good</string>
+    <string name="song4">Despacito</string>
+    <string name="song5">Shape Of You</string>
+    <string name="song6">Writing\'s On The Wall</string>
+
+    <!--String set for the start & end time-->
+    <string name="startTime">0:00</string>
+    <string name="endTime">4:45</string>
+
+    <!--String set for the payment API description-->
+    <string name="paymentAPIdescription">Write here</string>
 </resources>

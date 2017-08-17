@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,13 +7,40 @@
     android:layout_height="match_parent"
     tools:context="me.rayanalkhelaiwi.musicalstructure.PaymentOption">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/songsListP"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        style="@style/barTransitionButtons"
+        android:src="@drawable/songslist" />
+
+    <ImageView
+        android:id="@+id/artistListP"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        style="@style/barTransitionButtons"
+        android:src="@drawable/artistlist"/>
+
+    <ImageView
+        android:id="@+id/playingP"
+        android:layout_centerHorizontal="true"
+        style="@style/barTransitionButtons"
+        android:src="@drawable/playing"/>
+
+    <ImageView
+        android:id="@+id/paymentIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/payment"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" />
 
-</LinearLayout>
+    <TextView
+        style="@style/songsArtistsPaymentDetails"
+        android:layout_below="@id/paymentIcon"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/paymentAPIdescription"/>
+
+</RelativeLayout>

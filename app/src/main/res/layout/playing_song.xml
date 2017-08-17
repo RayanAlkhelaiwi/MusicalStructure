@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="me.rayanalkhelaiwi.musicalstructure.PlayingSong">
+
+    <ImageView
+        android:id="@+id/songsListPS"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        style="@style/barTransitionButtons"
+        android:src="@drawable/songslist" />
+
+    <ImageView
+        android:id="@+id/artistListPS"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        style="@style/barTransitionButtons"
+        android:src="@drawable/artistlist"/>
+
+    <ImageView
+        android:id="@+id/paymentPS"
+        android:layout_centerHorizontal="true"
+        style="@style/barTransitionButtons"
+        android:src="@drawable/payment"/>
 
     <ImageView
         android:id="@+id/stopButton"
@@ -15,45 +34,46 @@
     <ImageView
         android:id="@+id/pauseButton"
         style="@style/playingStyleControlButtons"
-        android:layout_toLeftOf="@id/stopButton"
+        android:layout_toStartOf="@id/stopButton"
         android:src="@drawable/pause"/>
 
     <ImageView
         android:id="@+id/playingButton"
         style="@style/playingStyleControlButtons"
-        android:layout_toRightOf="@id/stopButton"
+        android:layout_toEndOf="@id/stopButton"
         android:src="@drawable/play"/>
 
     <ImageView
         android:id="@+id/backwardButton"
         style="@style/playingStyleControlButtons"
-        android:layout_toLeftOf="@id/pauseButton"
+        android:layout_toStartOf="@id/pauseButton"
         android:src="@drawable/backward"/>
 
     <ImageView
         android:id="@+id/forwardButton"
         style="@style/playingStyleControlButtons"
-        android:layout_toRightOf="@id/playingButton"
+        android:layout_toEndOf="@id/playingButton"
         android:src="@drawable/forward"/>
 
     <ImageView
-        android:id="@+id/albumImage"
+        android:id="@+id/defaultplayingpic"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/musicplayericon"/>
+        android:src="@drawable/defaultplayingpic"/>
 
     <TextView
         android:id="@+id/startTime"
-        android:text="0:00"
+        android:text="@string/startTime"
         android:layout_marginStart="16dp"
         android:layout_alignParentStart="true"
         style="@style/timingSeekBarStyle"/>
 
     <TextView
         android:id="@+id/endTime"
-        android:text="3:47"
+        android:text="@string/endTime"
         android:layout_marginEnd="16dp"
         android:layout_alignParentEnd="true"
         style="@style/timingSeekBarStyle"/>
@@ -62,26 +82,24 @@
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/startTime"
+        android:layout_below="@id/startTime"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp" />
 
-    <ImageView
-        android:id="@+id/songsList"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/songslist"/>
+    <TextView
+        android:id="@+id/artistPS"
+        style="@style/songsArtistsPaymentDetails"
+        android:textStyle="bold"
+        android:layout_below="@id/stopButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/artist6"/>
 
-    <ImageView
-        android:id="@+id/artistList"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/artistlist"/>
-
+    <TextView
+        android:id="@+id/songPS"
+        style="@style/songsArtistsPaymentDetails"
+        android:layout_below="@id/stopButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="@string/song6"/>
 </RelativeLayout>
