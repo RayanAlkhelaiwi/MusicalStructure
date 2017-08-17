@@ -65,7 +65,7 @@
     <ImageView
         android:id="@+id/songListPic3"
         style="@style/songsPics"
-        android:layout_marginTop="270dp"/>
+        android:layout_marginTop="280dp"/>
 
     <TextView
         style="@style/songsArtistsPaymentDetails"
@@ -83,7 +83,7 @@
     <ImageView
         android:id="@+id/songListPic4"
         style="@style/songsPics"
-        android:layout_marginTop="340dp"/>
+        android:layout_marginTop="360dp"/>
 
     <TextView
         style="@style/songsArtistsPaymentDetails"
@@ -101,7 +101,7 @@
     <ImageView
         android:id="@+id/songListPic5"
         style="@style/songsPics"
-        android:layout_marginTop="410dp"/>
+        android:layout_marginTop="440dp"/>
 
     <TextView
         style="@style/songsArtistsPaymentDetails"
@@ -119,7 +119,7 @@
     <ImageView
         android:id="@+id/songListPic6"
         style="@style/songsPics"
-        android:layout_marginTop="480dp"/>
+        android:layout_marginTop="520dp"/>
 
     <TextView
         style="@style/songsArtistsPaymentDetails"

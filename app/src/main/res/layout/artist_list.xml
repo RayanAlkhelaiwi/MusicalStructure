@@ -84,7 +84,7 @@
         android:id="@+id/artistListPic4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="370dp"
         android:layout_marginStart="10dp"
         android:src="@drawable/artistlist"/>
 
@@ -102,7 +102,7 @@
         android:id="@+id/artistListPic5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="370dp"
         android:layout_marginStart="142dp"
         android:src="@drawable/artistlist"/>
 
@@ -120,7 +120,7 @@
         android:id="@+id/artistListPic6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="370dp"
         android:layout_marginStart="274dp"
         android:src="@drawable/artistlist"/>
 
