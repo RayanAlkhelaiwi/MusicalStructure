@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MusicalStructure</string>
+    <string name="app_name">Musical Structure</string>
 
     <!--String set for the artists' names-->
     <string name="artist1">Bruno Mars</string>
@@ -22,5 +22,16 @@
     <string name="endTime">4:45</string>
 
     <!--String set for the payment API description-->
-    <string name="paymentAPIdescription">Write here</string>
+    <string name="paymentAPIdescription">Android Pay API can be used, by integrating it in the app. The API is part of Google Play Services (GPS),
+        so GPS have to be implemented first. \n\nThe steps are: \n1. assign a showProgressDialog() and check if user is ready to pay.
+        \n2. Request a payment token, then a gateway token. \n3. Request a network token. \n4. Create a Masked Wallet request
+    \n5. Add a purchase button with WalletFragment. \n6. Create the WalletFragment. \n7. Request the Full Wallet.
+    \n In addition, there is a tutorial for handling errors and issues relating to payment. \n\nSource: goo.gl/yCL1bW</string>
 </resources>
+
+<!--
+    The icons' rights are reserved to:
+        1. /madebyoliver
+        2. /epiccoders
+    From flaticon.com
+-->

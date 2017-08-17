@@ -13,12 +13,13 @@ public class PaymentOption extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment_option);
 
+        //Declaration for the 3 ImageViews at the top in Payment page.
         ImageView songsListP = (ImageView) findViewById(R.id.songsListP);
         ImageView playingP = (ImageView) findViewById(R.id.playingP);
         ImageView artistListP = (ImageView) findViewById(R.id.artistListP);
 
-        songsListP.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        songsListP.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the songsListP View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent songsListP = new Intent(PaymentOption.this, SongsList.class);
@@ -26,8 +27,8 @@ public class PaymentOption extends AppCompatActivity {
             }
         });
 
-        playingP.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        playingP.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the playingP View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent playingP = new Intent(PaymentOption.this, PlayingSong.class);
@@ -35,8 +36,8 @@ public class PaymentOption extends AppCompatActivity {
             }
         });
 
-        artistListP.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        artistListP.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the artistListP View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent artistListP = new Intent(PaymentOption.this, ArtistList.class);

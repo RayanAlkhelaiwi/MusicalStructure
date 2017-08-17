@@ -13,12 +13,13 @@ public class ArtistList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.artist_list);
 
+        //Declaration for the 3 ImageViews at the top in ArtistList page.
         ImageView songsListAL = (ImageView) findViewById(R.id.songsListAL);
         ImageView paymentAL = (ImageView) findViewById(R.id.paymentAL);
         ImageView playingAL = (ImageView) findViewById(R.id.playingAL);
 
-        songsListAL.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        songsListAL.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the songsListAL View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent songsListAL = new Intent(ArtistList.this, SongsList.class);
@@ -26,8 +27,8 @@ public class ArtistList extends AppCompatActivity {
             }
         });
 
-        paymentAL.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        paymentAL.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the paymentAL View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent paymentAL = new Intent(ArtistList.this, PaymentOption.class);
@@ -35,8 +36,8 @@ public class ArtistList extends AppCompatActivity {
             }
         });
 
-        playingAL.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        playingAL.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the playingAL View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent playingAL = new Intent(ArtistList.this, PlayingSong.class);

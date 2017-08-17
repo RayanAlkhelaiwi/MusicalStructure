@@ -13,12 +13,16 @@ public class SongsList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
 
+        //Sets the window of the SongsList to differentiate from the app name in the AndroidManifest.
+        setTitle("Songs List");
+
+        //Declaration for the 3 ImageViews at the top in SongsList page.
         ImageView playingSL = (ImageView) findViewById(R.id.playingSL);
         ImageView paymentSL = (ImageView) findViewById(R.id.paymentSL);
         ImageView artistListSL = (ImageView) findViewById(R.id.artistListSL);
 
-        playingSL.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        playingSL.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the playingSL View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent playingSL = new Intent(SongsList.this, PlayingSong.class);
@@ -26,8 +30,8 @@ public class SongsList extends AppCompatActivity {
             }
         });
 
-        paymentSL.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        paymentSL.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the paymentSL View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent paymentSL = new Intent(SongsList.this, PaymentOption.class);
@@ -35,8 +39,8 @@ public class SongsList extends AppCompatActivity {
             }
         });
 
-        artistListSL.setOnClickListener (new View.OnClickListener() {
-            // The code in this method will be executed when the phrases View is clicked on.
+        artistListSL.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the artistListSL View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent artistListSL = new Intent(SongsList.this, ArtistList.class);
