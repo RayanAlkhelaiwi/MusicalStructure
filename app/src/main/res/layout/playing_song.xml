@@ -5,110 +5,126 @@
     android:layout_height="match_parent"
     tools:context="me.rayanalkhelaiwi.musicalstructure.PlayingSong">
 
+    <!--Activity Label in TextView-->
+    <TextView
+        android:id="@+id/PlayingSong_label_text_view"
+        style="@style/activityLabel"
+        android:text="@string/now_playing_label" />
+
+    <!--Activity Description in TextView-->
+    <TextView
+        android:id="@+id/PlayingSong_description_text_view"
+        style="@style/activityDescription"
+        android:layout_below="@id/PlayingSong_label_text_view"
+        android:text="@string/now_playing_description" />
+
     <!--Beginning of the 3 ImageViews at the top-->
     <ImageView
-        android:id="@+id/songsListPS"
+        android:id="@+id/PlayingSong_songs_list"
         style="@style/barTransitionButtons"
         android:layout_alignParentStart="true"
+        android:layout_below="@id/PlayingSong_description_text_view"
         android:layout_marginStart="24dp"
         android:src="@drawable/songslist" />
 
     <ImageView
-        android:id="@+id/artistListPS"
+        android:id="@+id/PlayingSong_artist_list"
         style="@style/barTransitionButtons"
         android:layout_alignParentEnd="true"
+        android:layout_below="@id/PlayingSong_description_text_view"
         android:layout_marginEnd="24dp"
         android:src="@drawable/artistlist" />
 
     <ImageView
-        android:id="@+id/paymentPS"
+        android:id="@+id/PlayingSong_payment"
         style="@style/barTransitionButtons"
+        android:layout_below="@id/PlayingSong_description_text_view"
         android:layout_centerHorizontal="true"
         android:src="@drawable/payment" />
     <!--End of the 3 ImageViews at the top-->
 
     <!--Beginning of the control buttons-->
     <ImageView
-        android:id="@+id/stopButton"
+        android:id="@+id/btn_stop"
         style="@style/playingStyleControlButtons"
         android:src="@drawable/stop" />
 
     <ImageView
-        android:id="@+id/pauseButton"
+        android:id="@+id/btn_pause"
         style="@style/playingStyleControlButtons"
-        android:layout_toStartOf="@id/stopButton"
+        android:layout_toStartOf="@id/btn_stop"
         android:src="@drawable/pause" />
 
     <ImageView
-        android:id="@+id/playingButton"
+        android:id="@+id/btn_play"
         style="@style/playingStyleControlButtons"
-        android:layout_toEndOf="@id/stopButton"
+        android:layout_toEndOf="@id/btn_stop"
         android:src="@drawable/play" />
 
     <ImageView
-        android:id="@+id/backwardButton"
+        android:id="@+id/btn_backward"
         style="@style/playingStyleControlButtons"
-        android:layout_toStartOf="@id/pauseButton"
+        android:layout_toStartOf="@id/btn_pause"
         android:src="@drawable/backward" />
 
     <ImageView
-        android:id="@+id/forwardButton"
+        android:id="@+id/btn_forward"
         style="@style/playingStyleControlButtons"
-        android:layout_toEndOf="@id/playingButton"
+        android:layout_toEndOf="@id/btn_play"
         android:src="@drawable/forward" />
     <!--End of the control buttons-->
 
     <!--Default icon for the album's picture-->
     <ImageView
-        android:id="@+id/defaultplayingpic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/default_song_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="240dp"
         android:src="@drawable/defaultplayingpic" />
 
     <!--Start time hardcoded-->
     <TextView
-        android:id="@+id/startTime"
+        android:id="@+id/start_time"
         style="@style/timingSeekBarStyle"
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
-        android:text="@string/startTime" />
+        android:text="@string/start_time" />
 
     <!--End time hardcoded-->
     <TextView
-        android:id="@+id/endTime"
+        android:id="@+id/end_time"
         style="@style/timingSeekBarStyle"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
-        android:text="@string/endTime" />
+        android:text="@string/end_time" />
 
     <!--Seekbar for the songs-->
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seek_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/startTime"
+        android:layout_below="@id/start_time"
         android:layout_marginTop="15dp" />
 
     <!--Name of the artist playing-->
     <TextView
-        android:id="@+id/artistPS"
+        android:id="@+id/PlayingSong_artists"
         style="@style/songsArtistsPaymentDetails"
-        android:layout_below="@id/stopButton"
+        android:layout_below="@id/btn_stop"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:text="@string/artist6"
+        android:text="@string/artist_six"
         android:textStyle="bold" />
 
     <!--Name of the song playing-->
     <TextView
-        android:id="@+id/songPS"
+        android:id="@+id/PlayingSong_songs"
         style="@style/songsArtistsPaymentDetails"
-        android:layout_below="@id/stopButton"
+        android:layout_below="@id/btn_stop"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="58dp"
-        android:text="@string/song6" />
+        android:text="@string/song_six" />
 </RelativeLayout>

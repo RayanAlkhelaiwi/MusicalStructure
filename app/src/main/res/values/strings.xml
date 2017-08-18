@@ -2,36 +2,67 @@
     <string name="app_name">Musical Structure</string>
 
     <!--String set for the artists' names-->
-    <string name="artist1">Bruno Mars</string>
-    <string name="artist2">Adele</string>
-    <string name="artist3">Michael Bublé</string>
-    <string name="artist4">Luis Fonsi</string>
-    <string name="artist5">Ed Sheeran</string>
-    <string name="artist6">Sam Smith</string>
+    <string name="artist_one">Bruno Mars</string>
+    <string name="artist_two">Adele</string>
+    <string name="artist_three">Michael Bublé</string>
+    <string name="artist_four">Luis Fonsi</string>
+    <string name="artist_five">Ed Sheeran</string>
+    <string name="artist_six">Sam Smith</string>
 
     <!--String set for the songs' names-->
-    <string name="song1">Just The Way You Are</string>
-    <string name="song2">Hello</string>
-    <string name="song3">Feeling Good</string>
-    <string name="song4">Despacito</string>
-    <string name="song5">Shape Of You</string>
-    <string name="song6">Writing\'s On The Wall</string>
+    <string name="song_one">Just The Way You Are</string>
+    <string name="song_two">Hello</string>
+    <string name="song_three">Feeling Good</string>
+    <string name="song_four">Despacito</string>
+    <string name="song_five">Shape Of You</string>
+    <string name="song_six">Writing\'s On The Wall</string>
 
     <!--String set for the start & end time-->
-    <string name="startTime">0:00</string>
-    <string name="endTime">4:45</string>
+    <string name="start_time">0:00</string>
+    <string name="end_time">4:45</string>
+
+    <!--String set for Payment Activity label & description in TextViews-->
+    <string name="payment_label">Payment Window</string>
+    <string name="payment_description">This window (activity) is responsible for processing the payment of a new song and/or album
+        using Android Pay API as described below, along with the ability to transition between songs list, now playing and artists
+        list activities at the top. </string>
+
+    <!--String set for SongsList Activity label & description in TextViews-->
+    <string name="songs_list_label">Songs List Window</string>
+    <string name="songs_list_description">This window (activity) is responsible for listing the songs, to choose from to play, along with the artist\'s names
+        using ListView (by having an ImageView and two TextViews to form a template as shown in the activity) and link them adapters (or a custom adapter),
+        along with the ability to transition between now playing, payment and artist list activities at the top.</string>
+
+    <!--String set for PlayingSong (Now Playing) Activity label & description in TextViews-->
+    <string name="now_playing_label">Now Playing Window</string>
+    <string name="now_playing_description">This window (activity) is responsible for playing the chosen song with the ability to play, stop, pause,
+    backward and forward, along with the ability to transition between songs list, payment and artist list activities at the top.</string>
+
+    <!--String set for ArtistList Activity label & description in TextViews-->
+    <string name="artist_list_label">Artists List Window</string>
+    <string name="artist_list_description">This window (activity) is responsible for listing the artists, to choose one to show his/her songs,
+        using ListView (by having an ImageView and TextView to form a template as shown in the activity) and link them adapters (or a custom adapter),
+        along with the ability to transition between songs list, payment and now playing payment activities at the top.</string>
 
     <!--String set for the payment API description-->
-    <string name="paymentAPIdescription">Android Pay API can be used, by integrating it in the app. The API is part of Google Play Services (GPS),
+    <string name="payment_name_api">Android Pay API</string>
+    <string name="payment_description_api">Android Pay API can be used, by integrating it in the app. The API is part of Google Play Services (GPS),
         so GPS have to be implemented first. \n\nThe steps are: \n1. assign a showProgressDialog() and check if user is ready to pay.
         \n2. Request a payment token, then a gateway token. \n3. Request a network token. \n4. Create a Masked Wallet request
     \n5. Add a purchase button with WalletFragment. \n6. Create the WalletFragment. \n7. Request the Full Wallet.
     \n In addition, there is a tutorial for handling errors and issues relating to payment. \n\nSource: goo.gl/yCL1bW</string>
+
+    <string name="other_class_name">MediaPlayer Class and Fragments</string>
+    <string name="other_class_description">A MediaPlayer is a class used to allow the app to have the support for the media files, and the ability to play them,
+        also an AudioManager can be used to better manage the audio files. Additionally, to better design the app to minimize the use of many activities, is to
+        have fragments in one activity. In this app, we can combine songs list and artists list, as two fragments, in one activity with two tabs at the top to navigate
+        between them.</string>
+
 </resources>
 
-<!--
-    The icons' rights are reserved to:
-        1. /madebyoliver
-        2. /epiccoders
-    From flaticon.com
--->
+    <!--
+        The icons' rights are reserved to:
+            1. /madebyoliver
+            2. /epiccoders
+        From flaticon.com
+    -->

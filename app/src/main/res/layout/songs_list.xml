@@ -5,152 +5,179 @@
     android:layout_height="match_parent"
     tools:context="me.rayanalkhelaiwi.musicalstructure.SongsList">
 
+    <!--Activity Label in TextView-->
+    <TextView
+        android:id="@+id/SongsList_label_text_view"
+        style="@style/activityLabel"
+        android:text="@string/songs_list_label" />
+
+    <!--Activity Description in TextView-->
+    <TextView
+        android:id="@+id/SongsList_description_text_view"
+        style="@style/activityDescription"
+        android:layout_below="@id/SongsList_label_text_view"
+        android:text="@string/songs_list_description" />
+
     <!--Beginning of the 3 ImageViews at the top-->
     <ImageView
-        android:id="@+id/playingSL"
+        android:id="@+id/SongsList_playing"
         style="@style/barTransitionButtons"
         android:layout_alignParentStart="true"
+        android:layout_below="@id/SongsList_description_text_view"
         android:layout_marginStart="24dp"
         android:src="@drawable/playing" />
 
     <ImageView
-        android:id="@+id/artistListSL"
+        android:id="@+id/SongsList_artist_list"
         style="@style/barTransitionButtons"
         android:layout_alignParentEnd="true"
+        android:layout_below="@id/SongsList_description_text_view"
         android:layout_marginEnd="24dp"
         android:src="@drawable/artistlist" />
 
     <ImageView
-        android:id="@+id/paymentSL"
+        android:id="@+id/SongsList_payment"
         style="@style/barTransitionButtons"
+        android:layout_below="@id/SongsList_description_text_view"
         android:layout_centerHorizontal="true"
         android:src="@drawable/payment" />
     <!--End of the 3 ImageViews at the top-->
 
-    <!--Default icon for the song-->
-    <ImageView
-        android:id="@+id/songListPic1"
-        style="@style/songsPics"
-        android:layout_marginTop="120dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="280dp">
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignTop="@id/songListPic1"
-        android:layout_toEndOf="@id/songListPic1"
-        android:text="@string/artist1"
-        android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--Default icon for the song-->
+            <ImageView
+                android:id="@+id/SongsList_pic_one"
+                style="@style/songsPics" />
 
-    <!--Name of the song-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignBottom="@id/songListPic1"
-        android:layout_toEndOf="@id/songListPic1"
-        android:text="@string/song1" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignTop="@id/SongsList_pic_one"
+                android:layout_toEndOf="@id/SongsList_pic_one"
+                android:text="@string/artist_one"
+                android:textStyle="bold" />
 
-    <!--Default icon for the song-->
-    <ImageView
-        android:id="@+id/songListPic2"
-        style="@style/songsPics"
-        android:layout_marginTop="200dp" />
+            <!--Name of the song-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignBottom="@id/SongsList_pic_one"
+                android:layout_toEndOf="@id/SongsList_pic_one"
+                android:text="@string/song_one" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignTop="@id/songListPic2"
-        android:layout_toEndOf="@id/songListPic2"
-        android:text="@string/artist2"
-        android:textStyle="bold" />
+            <!--Default icon for the song-->
+            <ImageView
+                android:id="@+id/SongsList_pic_two"
+                style="@style/songsPics"
+                android:layout_marginTop="80dp" />
 
-    <!--Name of the song-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignBottom="@id/songListPic2"
-        android:layout_toEndOf="@id/songListPic2"
-        android:text="@string/song2" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignTop="@id/SongsList_pic_two"
+                android:layout_toEndOf="@id/SongsList_pic_two"
+                android:text="@string/artist_two"
+                android:textStyle="bold" />
 
-    <!--Default icon for the song-->
-    <ImageView
-        android:id="@+id/songListPic3"
-        style="@style/songsPics"
-        android:layout_marginTop="280dp" />
+            <!--Name of the song-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignBottom="@id/SongsList_pic_two"
+                android:layout_toEndOf="@id/SongsList_pic_two"
+                android:text="@string/song_two" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignTop="@id/songListPic3"
-        android:layout_toEndOf="@id/songListPic3"
-        android:text="@string/artist3"
-        android:textStyle="bold" />
+            <!--Default icon for the song-->
+            <ImageView
+                android:id="@+id/SongsList_pic_three"
+                style="@style/songsPics"
+                android:layout_marginTop="160dp" />
 
-    <!--Name of the song-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignBottom="@id/songListPic3"
-        android:layout_toEndOf="@id/songListPic3"
-        android:text="@string/song3" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignTop="@id/SongsList_pic_three"
+                android:layout_toEndOf="@id/SongsList_pic_three"
+                android:text="@string/artist_three"
+                android:textStyle="bold" />
 
-    <!--Default icon for the song-->
-    <ImageView
-        android:id="@+id/songListPic4"
-        style="@style/songsPics"
-        android:layout_marginTop="360dp" />
+            <!--Name of the song-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignBottom="@id/SongsList_pic_three"
+                android:layout_toEndOf="@id/SongsList_pic_three"
+                android:text="@string/song_three" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignTop="@id/songListPic4"
-        android:layout_toEndOf="@id/songListPic4"
-        android:text="@string/artist4"
-        android:textStyle="bold" />
+            <!--Default icon for the song-->
+            <ImageView
+                android:id="@+id/SongsList_pic_four"
+                style="@style/songsPics"
+                android:layout_marginTop="240dp" />
 
-    <!--Name of the song-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignBottom="@id/songListPic4"
-        android:layout_toEndOf="@id/songListPic4"
-        android:text="@string/song4" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignTop="@id/SongsList_pic_four"
+                android:layout_toEndOf="@id/SongsList_pic_four"
+                android:text="@string/artist_four"
+                android:textStyle="bold" />
 
-    <!--Default icon for the song-->
-    <ImageView
-        android:id="@+id/songListPic5"
-        style="@style/songsPics"
-        android:layout_marginTop="440dp" />
+            <!--Name of the song-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignBottom="@id/SongsList_pic_four"
+                android:layout_toEndOf="@id/SongsList_pic_four"
+                android:text="@string/song_four" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignTop="@id/songListPic5"
-        android:layout_toEndOf="@id/songListPic5"
-        android:text="@string/artist5"
-        android:textStyle="bold" />
+            <!--Default icon for the song-->
+            <ImageView
+                android:id="@+id/SongsList_pic_five"
+                style="@style/songsPics"
+                android:layout_marginTop="320dp" />
 
-    <!--Name of the song-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignBottom="@id/songListPic5"
-        android:layout_toEndOf="@id/songListPic5"
-        android:text="@string/song5" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignTop="@id/SongsList_pic_five"
+                android:layout_toEndOf="@id/SongsList_pic_five"
+                android:text="@string/artist_five"
+                android:textStyle="bold" />
 
-    <!--Default icon for the song-->
-    <ImageView
-        android:id="@+id/songListPic6"
-        style="@style/songsPics"
-        android:layout_marginTop="520dp" />
+            <!--Name of the song-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignBottom="@id/SongsList_pic_five"
+                android:layout_toEndOf="@id/SongsList_pic_five"
+                android:text="@string/song_five" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignTop="@id/songListPic6"
-        android:layout_toEndOf="@id/songListPic6"
-        android:text="@string/artist6"
-        android:textStyle="bold" />
+            <!--Default icon for the song-->
+            <ImageView
+                android:id="@+id/SongsList_pic_six"
+                style="@style/songsPics"
+                android:layout_marginTop="400dp" />
 
-    <!--Name of the song-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_alignBottom="@id/songListPic6"
-        android:layout_toEndOf="@id/songListPic6"
-        android:text="@string/song6" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignTop="@id/SongsList_pic_six"
+                android:layout_toEndOf="@id/SongsList_pic_six"
+                android:text="@string/artist_six"
+                android:textStyle="bold" />
+
+            <!--Name of the song-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_alignBottom="@id/SongsList_pic_six"
+                android:layout_toEndOf="@id/SongsList_pic_six"
+                android:text="@string/song_six" />
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

@@ -5,53 +5,116 @@
     android:layout_height="match_parent"
     tools:context="me.rayanalkhelaiwi.musicalstructure.PaymentOption">
 
+    <!--Activity Label in TextView-->
+    <TextView
+        android:id="@+id/Payment_label_text_view"
+        style="@style/activityLabel"
+        android:text="@string/payment_label" />
+
+    <!--Activity Description in TextView-->
+    <TextView
+        android:id="@+id/Payment_description_text_view"
+        style="@style/activityDescription"
+        android:layout_below="@id/Payment_label_text_view"
+        android:text="@string/payment_description" />
+
     <!--Beginning of the 3 ImageViews at the top-->
     <ImageView
-        android:id="@+id/songsListP"
+        android:id="@+id/Payment_ab_songs_list"
         style="@style/barTransitionButtons"
         android:layout_alignParentStart="true"
+        android:layout_below="@id/Payment_description_text_view"
         android:layout_marginStart="24dp"
         android:src="@drawable/songslist" />
 
     <ImageView
-        android:id="@+id/artistListP"
+        android:id="@+id/Payment_ab_artist_list"
         style="@style/barTransitionButtons"
         android:layout_alignParentEnd="true"
+        android:layout_below="@id/Payment_description_text_view"
         android:layout_marginEnd="24dp"
         android:src="@drawable/artistlist" />
 
     <ImageView
-        android:id="@+id/playingP"
+        android:id="@+id/Payment_ab_playing"
         style="@style/barTransitionButtons"
+        android:layout_below="@id/Payment_description_text_view"
         android:layout_centerHorizontal="true"
         android:src="@drawable/playing" />
     <!--End of the 3 ImageViews at the top-->
 
     <ImageView
-        android:id="@+id/paymentIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ic_payment"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Payment_ab_playing"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/payment" />
 
     <!--To make the text scrollable inside its LinearLayout-->
-    <ScrollView
+
+    <LinearLayout
+        android:id="@+id/Payment_linear_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/paymentIcon">
+        android:layout_below="@id/ic_payment"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
-            <TextView
-                style="@style/songsArtistsPaymentDetails"
-                android:layout_margin="16dp"
-                android:text="@string/paymentAPIdescription"
-                android:textAlignment="center" />
-        </LinearLayout>
-    </ScrollView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/songsArtistsPaymentDetails"
+                    android:text="@string/payment_name_api"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/songsArtistsPaymentDetails"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/payment_description_api"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/songsArtistsPaymentDetails"
+                    android:text="@string/other_class_name"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/songsArtistsPaymentDetails"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/other_class_description"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 
 </RelativeLayout>

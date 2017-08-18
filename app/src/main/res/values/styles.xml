@@ -10,7 +10,7 @@
 
     <!--Style set for the playing control buttons-->
     <style name="playingStyleControlButtons">
-        <item name="android:layout_below">@id/seekBar</item>
+        <item name="android:layout_below">@id/seek_bar</item>
         <item name="android:layout_width">52dp</item>
         <item name="android:layout_height">52dp</item>
         <item name="android:layout_marginTop">28dp</item>
@@ -21,9 +21,9 @@
 
     <!--Style set for the timing of the seek-bar-->
     <style name="timingSeekBarStyle">
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_below">@+id/defaultplayingpic</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/default_song_pic</item>
         <item name="android:textSize">16sp</item>
     </style>
 
@@ -49,5 +49,22 @@
         <item name="android:layout_width">52dp</item>
         <item name="android:layout_height">52dp</item>
         <item name="android:src">@drawable/musicalnotetwo</item>
+    </style>
+
+    <style name="activityLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="activityDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textAlignment">center</item>
     </style>
 </resources>

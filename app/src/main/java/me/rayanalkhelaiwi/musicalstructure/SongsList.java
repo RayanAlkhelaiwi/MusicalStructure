@@ -17,9 +17,9 @@ public class SongsList extends AppCompatActivity {
         setTitle("Songs List");
 
         //Declaration for the 3 ImageViews at the top in SongsList page.
-        ImageView playingSL = (ImageView) findViewById(R.id.playingSL);
-        ImageView paymentSL = (ImageView) findViewById(R.id.paymentSL);
-        ImageView artistListSL = (ImageView) findViewById(R.id.artistListSL);
+        ImageView playingSL = (ImageView) findViewById(R.id.SongsList_playing);
+        ImageView paymentSL = (ImageView) findViewById(R.id.SongsList_payment);
+        ImageView artistListSL = (ImageView) findViewById(R.id.SongsList_artist_list);
 
         playingSL.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the playingSL View is clicked on.

@@ -5,146 +5,171 @@
     android:layout_height="match_parent"
     tools:context="me.rayanalkhelaiwi.musicalstructure.ArtistList">
 
+    <!--Activity Label in TextView-->
+    <TextView
+        android:id="@+id/ArtistList_label_text_view"
+        style="@style/activityLabel"
+        android:text="@string/artist_list_label" />
+
+    <!--Activity Description in TextView-->
+    <TextView
+        android:id="@+id/ArtistList_description_text_view"
+        style="@style/activityDescription"
+        android:layout_below="@id/ArtistList_label_text_view"
+        android:text="@string/artist_list_description" />
+
     <!--Beginning of the 3 ImageViews at the top-->
     <ImageView
-        android:id="@+id/songsListAL"
+        android:id="@+id/ArtistList_songs_list"
         style="@style/barTransitionButtons"
         android:layout_alignParentStart="true"
+        android:layout_below="@id/ArtistList_description_text_view"
         android:layout_marginStart="24dp"
         android:src="@drawable/songslist" />
 
     <ImageView
-        android:id="@+id/playingAL"
+        android:id="@+id/ArtistList_playing"
         style="@style/barTransitionButtons"
         android:layout_alignParentEnd="true"
+        android:layout_below="@id/ArtistList_description_text_view"
         android:layout_marginEnd="24dp"
         android:src="@drawable/playing" />
 
     <ImageView
-        android:id="@+id/paymentAL"
+        android:id="@+id/ArtistList_payment"
         style="@style/barTransitionButtons"
+        android:layout_below="@id/ArtistList_description_text_view"
         android:layout_centerHorizontal="true"
         android:src="@drawable/payment" />
     <!--End of the 3 ImageViews at the top-->
 
-    <!--Default Icon for the artist's album-->
-    <ImageView
-        android:id="@+id/artistListPic1"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="140dp"
-        android:src="@drawable/artistlist" />
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="260dp">
 
-    <!--Name of the Artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_width="128dp"
-        android:layout_below="@id/artistListPic1"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/artist1"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <!--Default Icon for the artist's album-->
-    <ImageView
-        android:id="@+id/artistListPic2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="140dp"
-        android:src="@drawable/artistlist" />
+            <!--Default Icon for the artist's album-->
+            <ImageView
+                android:id="@+id/artist_list_pic_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/artistlist" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_width="128dp"
-        android:layout_below="@id/artistListPic2"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/artist2"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+            <!--Name of the Artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_width="128dp"
+                android:layout_below="@id/artist_list_pic_one"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/artist_one"
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
-    <!--Default Icon for the artist's album-->
-    <ImageView
-        android:id="@+id/artistListPic3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="274dp"
-        android:layout_marginTop="140dp"
-        android:src="@drawable/artistlist" />
+            <!--Default Icon for the artist's album-->
+            <ImageView
+                android:id="@+id/artist_list_pic_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="142dp"
+                android:src="@drawable/artistlist" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_width="128dp"
-        android:layout_below="@id/artistListPic3"
-        android:layout_marginStart="274dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/artist3"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_width="128dp"
+                android:layout_below="@id/artist_list_pic_two"
+                android:layout_marginStart="142dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/artist_two"
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
-    <!--Default Icon for the artist's album-->
-    <ImageView
-        android:id="@+id/artistListPic4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="370dp"
-        android:src="@drawable/artistlist" />
+            <!--Default Icon for the artist's album-->
+            <ImageView
+                android:id="@+id/artist_list_pic_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="274dp"
+                android:src="@drawable/artistlist" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_width="128dp"
-        android:layout_below="@id/artistListPic4"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/artist4"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_width="128dp"
+                android:layout_below="@id/artist_list_pic_three"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/artist_three"
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
-    <!--Default Icon for the artist's album-->
-    <ImageView
-        android:id="@+id/artistListPic5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="370dp"
-        android:src="@drawable/artistlist" />
+            <!--Default Icon for the artist's album-->
+            <ImageView
+                android:id="@+id/artist_list_pic_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="190dp"
+                android:src="@drawable/artistlist" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_width="128dp"
-        android:layout_below="@id/artistListPic5"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/artist5"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_width="128dp"
+                android:layout_below="@id/artist_list_pic_four"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/artist_four"
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
-    <!--Default Icon for the artist's album-->
-    <ImageView
-        android:id="@+id/artistListPic6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="274dp"
-        android:layout_marginTop="370dp"
-        android:src="@drawable/artistlist" />
+            <!--Default Icon for the artist's album-->
+            <ImageView
+                android:id="@+id/artist_list_pic_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="142dp"
+                android:layout_marginTop="190dp"
+                android:src="@drawable/artistlist" />
 
-    <!--Name of the artist-->
-    <TextView
-        style="@style/songsArtistsPaymentDetails"
-        android:layout_width="128dp"
-        android:layout_below="@id/artistListPic6"
-        android:layout_marginStart="274dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/artist6"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_width="128dp"
+                android:layout_below="@id/artist_list_pic_five"
+                android:layout_marginStart="142dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/artist_five"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <!--Default Icon for the artist's album-->
+            <ImageView
+                android:id="@+id/artist_list_pic_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="190dp"
+                android:src="@drawable/artistlist" />
+
+            <!--Name of the artist-->
+            <TextView
+                style="@style/songsArtistsPaymentDetails"
+                android:layout_width="128dp"
+                android:layout_below="@id/artist_list_pic_six"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/artist_six"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

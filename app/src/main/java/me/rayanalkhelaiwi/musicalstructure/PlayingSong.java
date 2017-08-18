@@ -14,9 +14,9 @@ public class PlayingSong extends AppCompatActivity {
         setContentView(R.layout.playing_song);
 
         //Declaration for the 3 ImageViews at the top in PlayingSongs page.
-        ImageView songsListPS = (ImageView) findViewById(R.id.songsListPS);
-        ImageView paymentPS = (ImageView) findViewById(R.id.paymentPS);
-        ImageView artistListPS = (ImageView) findViewById(R.id.artistListPS);
+        ImageView songsListPS = (ImageView) findViewById(R.id.PlayingSong_songs_list);
+        ImageView paymentPS = (ImageView) findViewById(R.id.PlayingSong_payment);
+        ImageView artistListPS = (ImageView) findViewById(R.id.PlayingSong_artist_list);
 
         songsListPS.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the songsListPS View is clicked on.

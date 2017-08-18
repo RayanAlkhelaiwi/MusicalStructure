@@ -14,9 +14,9 @@ public class PaymentOption extends AppCompatActivity {
         setContentView(R.layout.payment_option);
 
         //Declaration for the 3 ImageViews at the top in Payment page.
-        ImageView songsListP = (ImageView) findViewById(R.id.songsListP);
-        ImageView playingP = (ImageView) findViewById(R.id.playingP);
-        ImageView artistListP = (ImageView) findViewById(R.id.artistListP);
+        ImageView songsListP = (ImageView) findViewById(R.id.Payment_ab_songs_list);
+        ImageView playingP = (ImageView) findViewById(R.id.Payment_ab_playing);
+        ImageView artistListP = (ImageView) findViewById(R.id.Payment_ab_artist_list);
 
         songsListP.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the songsListP View is clicked on.

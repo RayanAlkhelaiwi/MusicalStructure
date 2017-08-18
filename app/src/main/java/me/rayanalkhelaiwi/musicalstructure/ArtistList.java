@@ -14,9 +14,9 @@ public class ArtistList extends AppCompatActivity {
         setContentView(R.layout.artist_list);
 
         //Declaration for the 3 ImageViews at the top in ArtistList page.
-        ImageView songsListAL = (ImageView) findViewById(R.id.songsListAL);
-        ImageView paymentAL = (ImageView) findViewById(R.id.paymentAL);
-        ImageView playingAL = (ImageView) findViewById(R.id.playingAL);
+        ImageView songsListAL = (ImageView) findViewById(R.id.ArtistList_songs_list);
+        ImageView paymentAL = (ImageView) findViewById(R.id.ArtistList_payment);
+        ImageView playingAL = (ImageView) findViewById(R.id.ArtistList_playing);
 
         songsListAL.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the songsListAL View is clicked on.
